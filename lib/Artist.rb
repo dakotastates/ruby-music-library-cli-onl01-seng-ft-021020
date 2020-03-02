@@ -19,4 +19,14 @@ class Artist
   def self.destory_all
     @@all.clear
   end
+  
+  def self.create(artist)
+    artist = self.new(artist)
+    artist.save
+    artist
+  end
+
+  def songs
+    @songs
+  end
 end
