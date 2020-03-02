@@ -16,5 +16,7 @@ class Artist
     @@all << self
   end
   
-  def 
+  def self.destory_all
+    @@all.clear
+  end
 end
